@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "poppins", sans-serif;
+}
+/* header */
+header {
+    width: 100%;
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px;
+    position: fixed;
+}
+
+.logo {
+    height: 60px;
+    border-radius: 25px;
+}
+
+.navbar,
+ .navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-list {
+    gap: 40px;
+}
+
+.navbar-list a {
+   color: black;
+} 
+
+.navbar-list li:first-child>a {
+    color: black;
+    font-weight: 700;
+}
+
+
+
+
+

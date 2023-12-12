@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Poppins&display=swap');
 
+:root {
+    /* colors */
+    --background: #5F9EA0;
+    --background2: #DCDCDC;
+    --text-black: #000;
+    --text-gray: #2F4F4F;
+    --primary:  #4682B4;
+    --secondary: #4169E1;
+    --btn-bg: #A9A9A9;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -44,6 +56,111 @@ header {
     color: black;
     font-weight: 700;
 }
+
+/* main */
+
+main {
+     background-color: var(--background2);
+    color: var(--text-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* primer section */
+
+#hero {
+    margin: top 65px;
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-card-info {
+    display: flex;
+    margin-top: 65px;
+    padding: 70px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    font-size: 48px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+    color: var(--text-black);
+}
+
+.hero-info p {
+    font-size: 14px;
+    width: 70%;
+    color: var(--text-gray);
+}
+
+.hero-info button {
+    color: var(--text-black);
+    background-color: var(--btn-bg);
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.hero-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 15px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-card img {
+    border-radius: 20px;
+}
+
+/* segundo section */
+
+.about {
+    margin: top 65px;
+    padding: 50px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.about-info p {
+    color: var(--text-gray);
+}
+
+
+
+
 
 
 

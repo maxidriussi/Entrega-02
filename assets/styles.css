@@ -83,10 +83,13 @@ main {
 .hero-card-info {
     display: flex;
     margin-top: 65px;
-    padding: 70px 0;
+    padding: 50px 0;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    background-color: var(--background);
+    border-radius: 30px;
+
 }
 
 .hero-info {
@@ -151,7 +154,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
+    width: 60%;
+    background-color: var(--background);
+    border-radius: 30px;
+    padding: 20px 20px;
 }
 
 .about-info p {

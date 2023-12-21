@@ -1,42 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Driussi Artesanias</title>
-    <link rel="stylesheet" href="./assets/styles.css">
-</head>
-<body>
-  <header>
-    <img class="logo" src="./assets/img/logodr.png" alt="logo">
-    <nav class="navbar">
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assets/img/logodr.png" alt="logo" />
+      <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/img/menu.png" alt="menú">
+        </label>
+        <input type="checkbox" id="menu-toggle">
         <ul class="navbar-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Nosotros</a></li>
         </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="hero">
-      <div class="hero-card-info">
-        <div class="hero-info">
-          <h1>Lo mejor para tu hogar.</h1>
-          <p>Contamos con un amplio catalogo de productos de la mejor calidad, 100% garantizado.</p>
-          <div>
-          <button>Consultas</button>
-          <button>Leer más</button>
+        <label for="cart-toggle">
+          <img class="cart-icon" src="./assets/img/carrito.png" alt="carrito" />
+        </label>
+        <input type="checkbox" id="cart-toggle">
+        <div class="cart">
+          <h2>Tus compras</h2>
+          <div class="cart-item">
+            <img src="./assets/img/card1.jpg" alt="">
+            <div class="item-info">
+              <h3 class="item-title">Cuchillos</h3>
+              <span class="item-price">$30.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="./assets/img/card2.jpg" alt="">
+            <div class="item-info">
+              <h3 class="item-title">Kit asador</h3>
+              <span class="item-price">$40.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="./assets/img/card3.jpg" alt="">
+            <div class="item-info">
+              <h3 class="item-title">Perchero</h3>
+              <span class="item-price">$35.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity up">+</span>
+            </div>
+          </div>
+  
+          <span class="divider"></span>
+  
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>$75.000</span>
+          </div>
+          <button class="btn-add">Comprar</button>
+  
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-card-info">
+          <div class="hero-info">
+            <h1>Lo mejor para tu hogar.</h1>
+            <p>
+              Contamos con un amplio catalogo de productos de la mejor calidad,
+              100% garantizado.
+            </p>
+            <div>
+              <button>Consultas</button>
+              <button>Leer más</button>
+            </div>
+          </div>
+          <div class="hero-card">
+            <img src="./assets/img/cuchillos.png" alt="cuchillos" />
           </div>
         </div>
-        <div class="hero-card"><img src="./assets/img/cuchillos.png" alt="cuchillos"></div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="about-info">
-        <p>Driussi Artesanias es una empresa familiar, nace en las sierras de Córdoba, creando desde cuchillos hasta exhibidores de vino, de distintos articulos para el diseño de interiores hasta puertas y rejas para la seguridad de su hogar, toda su construcción con los mejores materiales y al mejor precio del mercado.</p>
-      </div>
-    </section>
-  </main>  
-</body>
+      </section>
+      <section id="about">
+        <div class="about-info">
+          <p>
+            <span>Driussi Artesanias</span> es una empresa familiar, nace en las
+            sierras de <span>Córdoba</span>, creando desde cuchillos hasta
+            exhibidores de vino, de distintos articulos para el diseño de
+            interiores hasta puertas y rejas para la seguridad de su hogar, toda
+            su construcción con los mejores materiales y al mejor precio del
+            mercado.
+          </p>
+        </div>
+      </section>
+      <section id="cards">
+        <div class="container">
+          <div class="tittle-top">
+            <h2>Nuestros Productos Estrella</h2>
+            <p>
+              Realizados totalmente a mano por profesionales, con gran nivel de
+              detalle y con los mejores materiales.
+            </p>
+          </div>
+          <div class="part-bottom">
+            <div class="card">
+              <img src="./assets/img/card1.jpg" alt="cuchillos" />
+              <div class="card-info">
+                <h3>Cuchillos</h3>
+                <p>
+                  Hechos con acero templado de disco de siembra directa, diseño
+                  personalizable al igual que el mango que se puede fabricar de
+                  distintos materiales.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img-02"
+                src="./assets/img/card2.jpg"
+                alt="cuchillos"
+              />
+              <div class="card-info">
+                <h3>Juegos de asador</h3>
+                <p>
+                  Marco de madera, herramientas de hierro liso, mango con de
+                  hueso, madera, suela y terminaciones en aluminio,
+                  personalizables a gusto.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/img/card3.jpg" alt="cuchillos" />
+              <div class="card-info">
+                <h3>Percheros</h3>
+                <p>
+                  De madera de pino, roble, algarrobo,etc. Todo barnizado,
+                  ganchos de acero, herradura de decoracion, se puede
+                  grabar,hecho a mano.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <section id="contact">
+          <div class="contact-info">
+            <h2>Contactanos!</h2>
+          <div class="country">
+            <p>Córdoba, Argentina</p>
+          </div>
+          <div class="calle">
+            <img src="./assets/img/logoubi.png" alt="ubicacion">
+            <p>Calle falsa 123</p>
+          </div>
+          <div class="mail">
+            <img src="./assets/img/maillogoo.png" alt="mail">
+            <p>mailco@gmail.com</p>
+          </div>
+          <div class="phone">
+            <img src="./assets/img/logotel.png" alt="telefono">
+            <p>351 6640255</p>
+          </div>
+        </div>
+        <img class="footer-img" src="./assets/img/logodr.png" alt="logo">
+        </section>
+      </footer>
+    </main>
+  </body>
 </html>

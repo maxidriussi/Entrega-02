@@ -1,0 +1,116 @@
+@media (max-width: 992px) {
+    .navbar {
+        gap: 10px;
+    }
+
+    .cart-icon {
+        height: 33px;
+        margin-right: 0rem;
+        margin-top: 4px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 98%;
+        flex-direction: column;
+        background-color: var(--background);
+        border: 2px solid;
+        border-top: 0px;
+        border-radius: 0 0 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    .navbar-list a {
+        font-size: 18px;
+    }
+
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .menu-label img {
+        height: 25px;
+        width: 25px;
+    }
+
+    #menu-toggle:checked + .navbar-list {
+        display: flex;
+    }
+
+    .hero-info {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero-info h1 {
+        width: 90%;
+        max-width: 500px;
+        min-width: unset;
+    }
+
+    .hero-info p {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .hero-card {
+        display: none;
+    }
+
+    #cards {
+        max-width: 80%;
+        flex-direction: column;
+    }
+
+    .part-bottom {
+        max-width: 80%;
+        flex-direction: column;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+
+    .footer-img {
+        height: 200px;
+        width:200px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .cart {
+        left: 0;
+        width: 100%;
+        border: none;
+    }
+
+    .cart-item {
+        flex-wrap: wrap;
+    }
+
+    .hero-info p {
+        width: 70%;
+        max-width: unset;
+    }
+
+    .info-card {
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+    }
+}
